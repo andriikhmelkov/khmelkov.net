@@ -3,23 +3,84 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>Andrii Khmelkov's corner of the Digital Universe</title>
+    <title>Andrii Khmelkov — Engineering Leader | Bay Area</title>
+    <meta
+      name="description"
+      content="Andrii Khmelkov is a Bay Area engineering leader who builds high-performing teams and delivers in high-ambiguity environments, grounded in quality engineering."
+    />
+    <meta name="author" content="Andrii Khmelkov" />
+    <link rel="canonical" href="https://khmelkov.net/" />
+    <meta name="theme-color" content="#0d6efd" />
+
+    <!-- Icons -->
+    <link rel="icon" href="favicon.ico" sizes="32x32" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+    <!-- Open Graph / link previews -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="https://khmelkov.net/" />
+    <meta property="og:site_name" content="Andrii Khmelkov" />
+    <meta property="og:title" content="Andrii Khmelkov — Engineering Leader" />
+    <meta
+      property="og:description"
+      content="Engineering leader who builds high-performing teams and delivers in high-ambiguity environments."
+    />
+    <meta property="og:image" content="https://khmelkov.net/img/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Portrait of Andrii Khmelkov" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="profile:first_name" content="Andrii" />
+    <meta property="profile:last_name" content="Khmelkov" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://khmelkov.net/#person",
+        "name": "Andrii Khmelkov",
+        "url": "https://khmelkov.net/",
+        "image": "https://khmelkov.net/img/andrii-960.jpg",
+        "description": "Engineering leader who builds high-performing teams and delivers in high-ambiguity environments.",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Delos Insurance Solutions"
+        },
+        "homeLocation": {
+          "@type": "Place",
+          "name": "San Francisco Bay Area"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Central Ukrainian National Technical University"
+        },
+        "award": "Winner, 2022 Guidewire Gives Back Impact Pitch",
+        "knowsLanguage": ["English", "Ukrainian", "Russian"],
+        "sameAs": [
+          "https://www.linkedin.com/in/khmelkov/",
+          "https://github.com/andriikhmelkov/",
+          "https://www.instagram.com/self.andrii/",
+          "https://www.youtube.com/@imperfecttravels",
+          "https://www.goodreads.com/user/show/30972156-andrii-khmelkov",
+          "https://www.inaturalist.org/people/andriikhmelkov"
+        ]
+      }
+    </script>
 
     <!-- Montserrat Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
 
     <!-- Material Icons -->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-      rel="stylesheet"
-    />
-
-    <!-- Leaflet CSS -->
-    <link
-      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
       rel="stylesheet"
     />
 
@@ -33,385 +94,446 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="container-fluid px-0">
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light shadow">
-        <div class="container-fluid">
-          <div class="navbar-brand d-flex align-items-center">
-            <span class="material-icons-outlined ms-2 icon-trigger" 
-                  title="Love and Light to you, visitor.">interests</span>
-            <span class="me-1">Andrii Khmelkov</span>
-          </div>
-            
-          <button
-            type="button"
-            class="navbar-toggler"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+    <a class="visually-hidden-focusable" href="#main">Skip to content</a>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow" aria-label="Main">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#top">
+          <span
+            class="material-icons-outlined ms-2 icon-trigger"
+            title="Love and Light to you, visitor."
+            aria-hidden="true"
+            >interests</span
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="container px-3">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link me-lg-3" href="#about">About</a>
+          <span class="me-1">Andrii Khmelkov</span>
+        </a>
+
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+            <li class="nav-item">
+              <a class="nav-link me-lg-3" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-lg-3" href="#principles">Principles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-lg-3" href="#beyond-work">Beyond Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-primary" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <main id="main">
+      <!-- Hero -->
+      <section id="top" class="bg-light py-5" aria-labelledby="hero-title">
+        <div class="container px-4 px-lg-5 py-lg-4">
+          <div class="row align-items-center gy-5">
+            <div class="col-lg-7">
+              <p class="eyebrow text-uppercase text-primary fw-bold small mb-2">
+                Engineering Leader · San Francisco Bay Area
+              </p>
+              <h1 id="hero-title" class="display-5 fw-bold mb-3">
+                Andrii Khmelkov
+              </h1>
+              <p class="lead mb-3">
+                I build high-performing engineering teams and deliver in
+                high-ambiguity environments.
+              </p>
+              <p class="text-muted mb-4">
+                My career started in quality assurance, and more than a decade
+                in the tech industry later, that foundation still shapes how I
+                lead. I'm passionate about leveraging technology to enhance
+                lives, and about building the teams that design, test, and
+                deliver high-quality software.
+              </p>
+              <div class="d-grid gap-3 d-sm-flex">
+                <a
+                  class="btn btn-primary btn-lg text-uppercase"
+                  href="https://www.linkedin.com/in/khmelkov/"
+                  target="_blank"
+                  rel="me noopener"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="me-2 align-baseline"
+                    viewBox="0 0 16 16"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                    />
+                  </svg>
+                  Let's Connect
+                </a>
+                <a
+                  class="btn btn-outline-primary btn-lg text-uppercase"
+                  href="#experience"
+                >
+                  Experience
+                  <span class="material-icons-outlined ms-1" aria-hidden="true"
+                    >arrow_downward</span
+                  >
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <picture>
+                <source srcset="img/andrii-960.webp" type="image/webp" />
+                <img
+                  class="img-fluid rounded-3 shadow"
+                  src="img/andrii-960.jpg"
+                  width="960"
+                  height="577"
+                  alt="Portrait of Andrii Khmelkov"
+                  fetchpriority="high"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Hero -->
+
+      <!-- Experience -->
+      <section id="experience" class="py-5" aria-labelledby="experience-title">
+        <div class="container py-3">
+          <div class="text-center mb-5">
+            <h2 id="experience-title" class="fw-bold">Experience</h2>
+            <p class="lead text-muted mb-0">
+              From quality assurance to engineering leadership.
+            </p>
+          </div>
+          <div class="row g-4 text-center mb-5">
+            <div class="col-lg-4">
+              <span class="material-icons-outlined icon-lg text-primary" aria-hidden="true">fact_check</span>
+              <h3 class="h5">Quality Engineering</h3>
+              <p class="text-muted mb-0">
+                I started in QA, where colleagues knew me as a thorough,
+                dependable, and analytical engineer, and where I learned how
+                reliable software is really made.
+              </p>
+            </div>
+            <div class="col-lg-4">
+              <span class="material-icons-outlined icon-lg text-primary" aria-hidden="true">code</span>
+              <h3 class="h5">Software Engineering</h3>
+              <p class="text-muted mb-0">
+                I moved into building software, bringing a tester's eye for
+                edge cases to design, implementation, and delivery.
+              </p>
+            </div>
+            <div class="col-lg-4">
+              <span class="material-icons-outlined icon-lg text-primary" aria-hidden="true">groups</span>
+              <h3 class="h5">Engineering Leadership</h3>
+              <p class="text-muted mb-0">
+                Today at Delos Insurance Solutions, I focus on building
+                high-performing teams and delivering in high-ambiguity
+                environments.
+              </p>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card h-100 border-0 bg-light p-4">
+                <h3 class="h6 text-uppercase text-primary fw-bold">Recognition</h3>
+                <ul class="list-unstyled text-muted mb-0">
+                  <li class="mb-2">Winner, 2022 Guidewire Gives Back Impact Pitch</li>
+                  <li>
+                    Creator of Zoom Bingo, a team-building game that helps
+                    coworkers get to know each other
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 border-0 bg-light p-4">
+                <h3 class="h6 text-uppercase text-primary fw-bold">Certifications</h3>
+                <ul class="list-unstyled text-muted mb-0">
+                  <li class="mb-2">AWS Technical Essentials (AWS, 2023)</li>
+                  <li>
+                    Amazon DynamoDB for Serverless Architectures (AWS, 2023)
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 border-0 bg-light p-4">
+                <h3 class="h6 text-uppercase text-primary fw-bold">Education &amp; Languages</h3>
+                <ul class="list-unstyled text-muted mb-0">
+                  <li class="mb-2">Central Ukrainian National Technical University</li>
+                  <li>English, Ukrainian, Russian</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Experience -->
+
+      <hr class="my-0" />
+
+      <!-- Principles -->
+      <section id="principles" class="text-center py-5" aria-labelledby="principles-title">
+        <div class="container py-3">
+          <h2 id="principles-title" class="fw-bold">Principles I Live By</h2>
+          <p class="lead text-muted mb-5">
+            I write the most impactful quotes down in my journal. These three
+            shaped me at different stages of life.
+          </p>
+          <div class="row g-4">
+            <div class="col-lg-4">
+              <h3 class="h5">Acceptance</h3>
+              <figure class="mb-0">
+                <blockquote class="blockquote text-muted mb-2">
+                  <p>
+                    <span class="material-icons-outlined" aria-hidden="true">chat_bubble</span>
+                    "I am human, nothing human is foreign to me."
+                  </p>
+                </blockquote>
+                <figcaption class="small text-muted">
+                  Terence · <em lang="la">Homo sum, humani nihil a me alienum puto.</em>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-4">
+              <h3 class="h5">Courage</h3>
+              <figure class="mb-0">
+                <blockquote class="blockquote text-muted mb-2">
+                  <p>
+                    <span class="material-icons-outlined" aria-hidden="true">chat_bubble</span>
+                    "Justification = reluctance."
+                  </p>
+                </blockquote>
+              </figure>
+            </div>
+            <div class="col-lg-4">
+              <h3 class="h5">Optimism</h3>
+              <figure class="mb-0">
+                <blockquote class="blockquote text-muted mb-2">
+                  <p>
+                    <span class="material-icons-outlined" aria-hidden="true">chat_bubble</span>
+                    "The primary cause of unhappiness is not the situation, but
+                    your thoughts about it."
+                  </p>
+                </blockquote>
+                <figcaption class="small text-muted">Eckhart Tolle</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Principles -->
+
+      <hr class="my-0" />
+
+      <!-- Beyond Work -->
+      <section id="beyond-work" class="text-center py-5" aria-labelledby="beyond-work-title">
+        <div class="container py-3">
+          <h2 id="beyond-work-title" class="fw-bold mb-5">Beyond Work</h2>
+          <div class="row g-5 mb-5">
+            <div class="col-lg-4">
+              <div class="card h-100 shadow-lg border-0 bg-light">
+                <img
+                  class="card-img-top img-thumb px-3 py-3"
+                  src="img/insta.jpg"
+                  width="1081"
+                  height="750"
+                  alt="Travel photograph by Andrii Khmelkov"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="card-body p-4">
+                  <h3 class="card-title h5 mb-3">Travel Photography</h3>
+                  <p class="card-text">
+                    Traveling, I love capturing nature, architecture, and people
+                    in their natural environment.
+                  </p>
+                </div>
+                <div class="card-footer bg-transparent p-3">
+                  <a
+                    class="btn btn-outline-primary btn-sm text-uppercase"
+                    href="https://www.instagram.com/self.andrii/"
+                    target="_blank"
+                    rel="me noopener"
+                  >
+                    <span class="material-icons-outlined me-1" aria-hidden="true">link</span>
+                    Instagram
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card h-100 shadow-lg border-0 bg-light">
+                <img
+                  class="card-img-top img-thumb px-3 py-3"
+                  src="img/lightroom.jpg"
+                  width="1080"
+                  height="750"
+                  alt="Portrait photograph by Andrii Khmelkov"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="card-body p-4">
+                  <h3 class="card-title h5 mb-3">Portrait Photography</h3>
+                  <p class="card-text">
+                    Portrait photography is a new passion of mine. Portraits
+                    capture a person's personality, character, and mood of the
+                    moment.
+                  </p>
+                </div>
+                <div class="card-footer bg-transparent p-3">
+                  <a
+                    class="btn btn-outline-primary btn-sm text-uppercase"
+                    href="https://adobe.ly/4hkZPL1"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <span class="material-icons-outlined me-1" aria-hidden="true">link</span>
+                    Portfolio
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card h-100 shadow-lg border-0 bg-light">
+                <img
+                  class="card-img-top img-thumb px-3 py-3"
+                  src="img/youtube.jpg"
+                  width="1080"
+                  height="750"
+                  alt="Still from a travel video by Andrii Khmelkov"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="card-body p-4">
+                  <h3 class="card-title h5 mb-3">Filming and Editing</h3>
+                  <p class="card-text">
+                    Videos can capture energy and mood, telling stories better
+                    than photos ever could. When traveling, I prioritize filming
+                    the experiences to share later with family and friends.
+                  </p>
+                </div>
+                <div class="card-footer bg-transparent p-3">
+                  <a
+                    class="btn btn-outline-primary btn-sm text-uppercase"
+                    href="https://www.youtube.com/@imperfecttravels"
+                    target="_blank"
+                    rel="me noopener"
+                  >
+                    <span class="material-icons-outlined me-1" aria-hidden="true">link</span>
+                    YouTube
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-4 text-start">
+            <div class="col-lg-4">
+              <h3 class="h5">
+                <span class="material-icons-outlined me-1" aria-hidden="true">book</span>
+                Memorable Reads
+              </h3>
+              <ul class="list-unstyled text-muted mb-0">
+                <li class="mb-2"><em>Steve Jobs</em> by Walter Isaacson</li>
+                <li class="mb-2">
+                  <em>Be Water, My Friend: The Teachings of Bruce Lee</em> by
+                  Shannon Lee
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link me-lg-3" href="#hobbies">Hobbies</a>
+                <li><em>Meditations</em> by Marcus Aurelius</li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <h3 class="h5">
+                <span class="material-icons-outlined me-1" aria-hidden="true">history_edu</span>
+                Curious About
+              </h3>
+              <ul class="list-unstyled text-muted mb-0">
+                <li class="mb-2">
+                  Human history and the events that shaped our world
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link me-lg-3" href="#impact">Impact</a>
+                <li class="mb-2">Finance, markets, and investing</li>
+                <li>
+                  Lifelong self-directed learning and understanding the world
+                  better
                 </li>
-                <li class="nav-item">
-                  <div class="btn-group dropstart">
-                    <button type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                      More
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><h6 class="dropdown-header">Activities</h6></li>
-                      <li><a class="dropdown-item" target="_blank" href="https://github.com/andriikhmelkov/">GitHub</a></li>
-                      <li><a class="dropdown-item" target="_blank" href="https://meta.wikimedia.org/wiki/Special:CentralAuth?target=AndriiKhmelkov">Wikipedia</a></li>
-                      <li><a class="dropdown-item" target="_blank" href="https://www.inaturalist.org/people/andriikhmelkov">iNaturalist</a></li>
-                      <li><a class="dropdown-item" target="_blank" href="https://www.goodreads.com/user/show/30972156-andrii-khmelkov">Goodreads</a></li>
-                      <li><a class="dropdown-item" target="_blank" href="https://www.alltrails.com/members/andrii-khmelkov/completed">AllTrails</a></li>
-                      <li><a class="dropdown-item" target="_blank" href="https://republic.com/@andrii-khmelkov">Republic</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><h6 class="dropdown-header">Other</h6></li>
-                      <li><a class="dropdown-item" target="_blank" href="https://www.zazzle.com/store/wanderlog/products">Storefront</a></li>
-                    </ul>
-                  </div>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <h3 class="h5">
+                <span class="material-icons-outlined me-1" aria-hidden="true">public</span>
+                Giving Back
+              </h3>
+              <ul class="list-unstyled text-muted mb-0">
+                <li class="mb-2">
+                  Contributor to
+                  <a href="https://meta.wikimedia.org/wiki/Special:CentralAuth?target=AndriiKhmelkov" target="_blank" rel="noopener">Wikipedia</a>,
+                  <a href="https://www.inaturalist.org/people/andriikhmelkov" target="_blank" rel="me noopener">iNaturalist</a>,
+                  and Numista
+                </li>
+                <li>
+                  Supporter of independent journalism: Ukrainska Pravda,
+                  Censor.net, and The Kyiv Independent
                 </li>
               </ul>
             </div>
           </div>
         </div>
-      </nav>
-      <!-- End Navbar -->
+      </section>
+      <!-- End Beyond Work -->
+    </main>
 
-      <!-- Hero -->
-      <header class="bg-light py-5">
-        <div class="container px-5">
-          <div class="row align-items-center">
-            <div class="col-lg-8 col-xl-7 col-xxl-6">
-              <div class="my-5">
-                <h2 class="text-primary text-center fw-bold mb-2">
-                  Welcome to My Corner of the Digital Universe
-                </h2>
-                <h2 class="text-center fw-bold mb-2"></h2>
-                <p class="lead text-muted mb-4">
-                  Hi there! I'm Andrii Khmelkov, a Software Engineer with strong
-                  foundation in quality assurance and overall a decade of
-                  experience in the Tech industry. I'm passionate about
-                  leveraging technology to enhance lives, excelling in
-                  designing, testing, and delivering high-quality software
-                  solutions. Driven by curiosity and innovation, I'm dedicated
-                  to creating tools that empower and inspire. Let's connect and
-                  make a difference together!
-                </p>
-                <div class="d-grid gap-3 d-sm-flex justify-content-center">
-                  <a
-                    class="btn btn-primary btn-large text-uppercase"
-                    href="#about"
-                  >
-                    Learn More
-                    <span class="material-icons-outlined ms-2"
-                      >help_outline</span
-                    >
-                  </a>
-                  <a
-                    class="btn btn-outline-primary btn-large text-uppercase"
-                    href="https://www.linkedin.com/in/khmelkov/"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="material-icons-outlined"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
-                      />
-                    </svg>
-                    Lets Connect
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-5 col-xxl-6 justify-content-center">
-              <img
-                class="img-fluid rounded-3 my-5"
-                src="img/andrii.jpg"
-                alt="Welcome Image"
-              />
-            </div>
-          </div>
-        </div>
-      </header>
-      <!-- End Hero -->
-
-      <main>
-        <!-- About -->
-        <section id="about" class="text-center py-3">
-          <div class="container py-3">
-            <div class="row justify-content-center">
-              <h2 class="fw-bold">Get to know</h2>
-              <p class="lead text-muted mb-3">
-                I love quotes and write down the most impactful ones in my journal.
-                Quotes have the power to convey profound meaning in a brief and
-                impactful way. The following 3 impacted my development on the
-                different stages of life:
-              </p>
-            </div>
-          </div>
-          <div class="container mb-3">
-            <div class="row">
-              <div class="col-lg-4 mx-auto mb-3">
-                <h5>Acceptance</h5>
-                <p class="text-muted mb-0 h5">
-                  <span class="material-icons-outlined"> chat_bubble </span> "I
-                  am human, nothing human is foreign to me." <em><small>(Homo sum, humani nihil a me alienum puto.)</small></em>
-                </p>
-              </div>
-              <div class="col-lg-4 mx-auto mb-3">
-                <h5>Courage</h5>
-                <p class="text-muted mb-0 h5">
-                  <span class="material-icons-outlined"> chat_bubble </span>
-                  "Justification = reluctance."
-                </p>
-              </div>
-              <div class="col-lg-4 mx-auto mb-3">
-                <h5>Optimism</h5>
-                <p class="text-muted mb-0 h5">
-                  <span class="material-icons-outlined"> chat_bubble </span>
-                  "The primary cause of unhappiness is not the situation, but
-                  your thoughts about it."
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="container py-4">
-            <div class="row justify-content-center">
-              <p class="lead text-muted mb-0 h5">
-                Reading is essential for personal growth as it expands
-                knowledge, stimulates the mind, and fosters continuous learning.
-                The following 3 are the most memorable recent reads:
-              </p>
-            </div>
-          </div>
-          <div class="container mb-5">
-            <div class="row">
-              <div class="col-lg-4 mx-auto mb-3">
-                <h5>Vision</h5>
-                <p class="text-muted mb-0 h5">
-                  <span class="material-icons-outlined"> book </span
-                  ><em>"Steve Jobs"</em> by Walter Isaacson.
-                </p>
-              </div>
-              <div class="col-lg-4 mx-auto mb-3">
-                <h5>Control</h5>
-                <p class="text-muted mb-0 h5">
-                  <span class="material-icons-outlined"> book </span
-                  ><em>"Be Water, My Friend: The Teachings of Bruce Lee"</em> by
-                  Shannon Lee.
-                </p>
-              </div>
-              <div class="col-lg-4 mx-auto mb-3">
-                <h5>Resilience</h5>
-                <p class="text-muted mb-0 h5">
-                  <span class="material-icons-outlined"> book </span
-                  ><em>"Meditations"</em> by Marcus Aurelius.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- End About -->
-
-        <hr />
-
-        <!-- Hobbies -->
-        <section id="hobbies" class="text-center py-3">
-          <div class="container py-3">
-            <div class="row justify-content-center">
-              <h2 class="fw-bold">Hobbies</h2>
-            </div>
-          </div>
-          <div class="container mb-5">
-            <div class="row">
-              <div class="col-lg-4 mx-auto mb-5">
-                <div class="card h-100 shadow-lg border-0 bg-light">
-                  <img
-                    class="card-img-top img-thumb px-3 py-3"
-                    src="img/insta.jpg"
-                    alt="Travel Photography"
-                  />
-                  <div class="card-body p-4">
-                    <h5 class="card-title mb-3">Travel Photography</h5>
-                    <p class="card-text">
-                      Traveling, I love capturing nature, architecture, and people in their natural environment.
-                    </p>
-                  </div>
-                  <div class="card-footer bg-transparent p-3">
-                    <a
-                      class="btn btn-outline-primary btn-sm text-uppercase"
-                      href="https://www.instagram.com/self.andrii/"
-                      target="_blank"
-                    >
-                      <span class="material-icons-outlined me-1">link</span>
-                      Check it out
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 mx-auto mb-5">
-                <div class="card h-100 shadow-lg border-0 bg-light">
-                  <img
-                    class="card-img-top img-thumb px-3 py-3"
-                    src="img/lightroom.jpg"
-                    alt="Portrait Photography"
-                  />
-                  <div class="card-body p-4">
-                    <h5 class="card-title mb-3">Portrait Photography</h5>
-                    <p class="card-text">
-                      Portrait photography is a new passion of mine. 
-                      Portraits capture a person's personality, character, and mood of the moment.
-                    </p>
-                  </div>
-                  <div class="card-footer bg-transparent p-3">
-                    <a
-                      class="btn btn-outline-primary btn-sm text-uppercase"
-                      href="https://adobe.ly/4hkZPL1"
-                      target="_blank"
-                    >
-                      <span class="material-icons-outlined me-1">link</span>
-                      Check it out
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 mx-auto mb-5">
-                <div class="card h-100 shadow-lg border-0 bg-light">
-                  <img
-                    class="card-img-top img-thumb px-3 py-3"
-                    src="img/youtube.jpg"
-                    alt="YouTube"
-                  />
-                  <div class="card-body p-4">
-                    <h5 class="card-title mb-3">Filming and Editing</h5>
-                    <p class="card-text">
-                      Videos can capture energy and mood, telling stories better than photos ever could.
-                      When traveling, I prioritize filming the experiences to share later with family and friends.
-                    </p>
-                  </div>
-                  <div class="card-footer bg-transparent p-3">
-                    <a
-                      class="btn btn-outline-primary btn-sm text-uppercase"
-                      href="https://www.youtube.com/@imperfecttravels"
-                      target="_blank"
-                    >
-                      <span class="material-icons-outlined me-1">link</span>
-                      Check it out
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-            <div class="container py-4">
-              <div class="row justify-content-center">
-                <p class="lead text-muted mb-0 h5">
-                  Among other interests of mine:
-                </p>
-              </div>
-            </div>
-            <div class="container mb-5">
-              <div class="row">
-                <div class="col-lg-4 mx-auto mb-3">
-                  <span class="material-icons-outlined"> bar_chart </span>
-                  <h5>Finance and Markets</h5>
-                  <p class="text-muted mb-0 h6">
-                    Understanding the world's financial markets and investing comes to me naturally.
-                  </p>
-                </div>
-                <div class="col-lg-4 mx-auto mb-3">
-                  <span class="material-icons-outlined"> history_edu </span>
-                  <h5>Human history</h5>
-                  <p class="text-muted mb-0 h6">
-                    I enjoy exploring the past and learning about the events that shaped our world.
-                  </p>
-                </div>
-                <div class="col-lg-4 mx-auto mb-3">
-                  <span class="material-icons-outlined"> accessibility_new </span>
-                  <h5>Growth</h5>
-                  <p class="text-muted mb-0 h6">
-                    I have been an autodidact my entire life. I constantly look for ways to understand the world better.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        </section>
-        <!-- End Hobbies -->
-
-        <hr />
-
-        <!-- About -->
-        <section id="impact" class="text-center py-3">
-          <div class="container py-3">
-            <div class="row justify-content-center">
-              <h2 class="fw-bold">Personal Impact</h2>
-              <p class="lead text-muted mb-3">
-                I firmly believe in empowering individuals to reach their full potential and supporting them in becoming self-sufficient.
-                Among the causes I support are environmental protection, education, and independent journalism.
-              </p>
-            </div>
-          </div>
-          <div class="container mb-3">
-            <div class="row">
-              <div class="col-lg-4 mx-auto mb-3">
-                <span class="material-icons-outlined"> public </span>
-                <h5>Environment</h5>
-                <ul class="list-unstyled">
-                  <li class="text-muted">iNaturalist (contributor)</li>
-                </ul>
-              </div>
-              <div class="col-lg-4 mx-auto mb-3">
-                <span class="material-icons-outlined"> school </span>
-                <h5>Education</h5>
-                <ul class="list-unstyled">
-                  <li class="text-muted">Wikipedia (contributor)</li>
-                  <li class="text-muted">Numista (contributor)</li>
-                </ul>
-              </div>  
-              <div class="col-lg-4 mx-auto mb-3">
-                <span class="material-icons-outlined"> diversity_3 </span>
-                <h5>Social</h5>
-                <ul class="list-unstyled">
-                  <li class="text-muted">Ukrainska Pravda</li>
-                  <li class="text-muted">censor.net</li>
-                  <li class="text-muted">The Kyiv Independent</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </section>
-        <!-- End About -->
-
-      </main>
-    </div>
+    <!-- Contact -->
+    <footer id="contact" class="bg-dark text-white text-center py-5" aria-labelledby="contact-title">
+      <div class="container py-3">
+        <h2 id="contact-title" class="fw-bold">Let's Connect</h2>
+        <p class="lead text-white-50 mb-4">
+          The best way to reach me is on LinkedIn.
+        </p>
+        <a
+          class="btn btn-primary btn-lg text-uppercase mb-5"
+          href="https://www.linkedin.com/in/khmelkov/"
+          target="_blank"
+          rel="me noopener"
+          >Message me on LinkedIn</a
+        >
+        <nav aria-label="Profiles">
+          <ul class="list-inline mb-4">
+            <li class="list-inline-item mx-2"><a class="link-light" href="https://github.com/andriikhmelkov/" target="_blank" rel="me noopener">GitHub</a></li>
+            <li class="list-inline-item mx-2"><a class="link-light" href="https://www.instagram.com/self.andrii/" target="_blank" rel="me noopener">Instagram</a></li>
+            <li class="list-inline-item mx-2"><a class="link-light" href="https://www.youtube.com/@imperfecttravels" target="_blank" rel="me noopener">YouTube</a></li>
+            <li class="list-inline-item mx-2"><a class="link-light" href="https://www.goodreads.com/user/show/30972156-andrii-khmelkov" target="_blank" rel="me noopener">Goodreads</a></li>
+            <li class="list-inline-item mx-2"><a class="link-light" href="https://www.alltrails.com/members/andrii-khmelkov/completed" target="_blank" rel="me noopener">AllTrails</a></li>
+            <li class="list-inline-item mx-2"><a class="link-light" href="https://republic.com/@andrii-khmelkov" target="_blank" rel="me noopener">Republic</a></li>
+            <li class="list-inline-item mx-2"><a class="link-light" href="https://www.zazzle.com/store/wanderlog/products" target="_blank" rel="noopener">Storefront</a></li>
+          </ul>
+        </nav>
+        <p class="small text-white-50 mb-0">© Andrii Khmelkov</p>
+      </div>
+    </footer>
+    <!-- End Contact -->
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Custom JS -->
-    <script src="js/scripts.js"></script>
   </body>
 </html>

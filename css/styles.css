@@ -30,16 +30,23 @@ body {
   font-size: 40px;
 }
 
+.eyebrow {
+  letter-spacing: .08em;
+}
+
+.icon-lg {
+  display: block;
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-bottom: .75rem;
+}
+
 .card > img {
   height: 250px;
+  object-fit: cover;
 }
 
 .img-thumb {
   max-width: 360px;
   align-self: center;
-}
-
-.testimonial > img {
-  height: 50px;
-  width: 50px;
 }
