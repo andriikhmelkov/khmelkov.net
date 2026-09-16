@@ -30,7 +30,7 @@
     <meta property="og:image" content="https://khmelkov.net/img/og-image.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Portrait of Andrii Khmelkov" />
+    <meta property="og:image:alt" content="Andrii Khmelkov, engineering leader in the San Francisco Bay Area" />
     <meta property="og:locale" content="en_US" />
     <meta property="profile:first_name" content="Andrii" />
     <meta property="profile:last_name" content="Khmelkov" />
@@ -69,15 +69,9 @@
         ]
       }
     </script>
-
-    <!-- Fonts: Archivo (headings, UI) and Source Serif 4 (reading text) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap"
-      rel="stylesheet"
-    />
-
+    <!-- Self-hosted fonts -->
+    <link rel="preload" href="fonts/archivo-400-900-normal-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/source-serif4-400-normal-latin.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/site.js" defer></script>
   </head>
@@ -328,49 +322,49 @@
             <div class="reel-scroller">
               <ol class="reel-track">
               <li class="reel-item">
-                <img src="img/reel-cave.webp" width="955" height="1000" alt="Two people silhouetted at the mouth of a sea cave above a sunlit ocean" decoding="async" />
+                <img src="img/reel-cave.webp" srcset="img/reel-cave-500.webp 500w, img/reel-cave.webp 1000w" sizes="(max-width: 700px) 66vw, 26rem" width="955" height="1000" alt="Two people silhouetted at the mouth of a sea cave above a sunlit ocean" decoding="async" />
               </li>
               <li class="reel-item">
-                <img src="img/reel-iceberg.webp" width="1000" height="1000" alt="A person in an orange parka watching a flat-topped iceberg from a small boat on still water" loading="lazy" decoding="async" />
+                <img src="img/reel-iceberg.webp" srcset="img/reel-iceberg-500.webp 500w, img/reel-iceberg.webp 1000w" sizes="(max-width: 700px) 66vw, 26rem" width="1000" height="1000" alt="A person in an orange parka watching a flat-topped iceberg from a small boat on still water" loading="lazy" decoding="async" />
               </li>
               <li class="reel-item">
-                <img src="img/reel-bicycles.webp" width="971" height="1000" alt="A woman in a plaid coat glancing back on a cobbled street lined with bicycles and autumn trees" loading="lazy" decoding="async" />
+                <img src="img/reel-bicycles.webp" srcset="img/reel-bicycles-500.webp 500w, img/reel-bicycles.webp 1000w" sizes="(max-width: 700px) 66vw, 26rem" width="971" height="1000" alt="A woman in a plaid coat glancing back on a cobbled street lined with bicycles and autumn trees" loading="lazy" decoding="async" />
               </li>
               <li class="reel-item">
-                <img src="img/reel-barn.webp" width="1000" height="1000" alt="A wooden barn on a green valley floor beneath towering red cliffs" loading="lazy" decoding="async" />
+                <img src="img/reel-barn.webp" srcset="img/reel-barn-500.webp 500w, img/reel-barn.webp 1000w" sizes="(max-width: 700px) 66vw, 26rem" width="1000" height="1000" alt="A wooden barn on a green valley floor beneath towering red cliffs" loading="lazy" decoding="async" />
               </li>
               <li class="reel-item">
-                <img src="img/reel-monastery.webp" width="720" height="722" alt="The long ornate stone facade of a monastery under a bright sky" loading="lazy" decoding="async" />
+                <img src="img/reel-monastery.webp" srcset="img/reel-monastery-500.webp 500w, img/reel-monastery.webp 1000w" sizes="(max-width: 700px) 66vw, 26rem" width="720" height="722" alt="The long ornate stone facade of a monastery under a bright sky" loading="lazy" decoding="async" />
               </li>
               <li class="reel-item">
-                <img src="img/reel-hoodoos.webp" width="1000" height="1000" alt="Mushroom-shaped sandstone hoodoos casting long shadows across a desert" loading="lazy" decoding="async" />
+                <img src="img/reel-hoodoos.webp" srcset="img/reel-hoodoos-500.webp 500w, img/reel-hoodoos.webp 1000w" sizes="(max-width: 700px) 66vw, 26rem" width="1000" height="1000" alt="Mushroom-shaped sandstone hoodoos casting long shadows across a desert" loading="lazy" decoding="async" />
               </li>
               <li class="reel-item">
-                <img src="img/reel-timber.webp" width="983" height="1000" alt="A quiet street of timber-framed houses leading to a twin-spired church" loading="lazy" decoding="async" />
+                <img src="img/reel-timber.webp" srcset="img/reel-timber-500.webp 500w, img/reel-timber.webp 1000w" sizes="(max-width: 700px) 66vw, 26rem" width="983" height="1000" alt="A quiet street of timber-framed houses leading to a twin-spired church" loading="lazy" decoding="async" />
               </li>
               <li class="reel-item">
-                <img src="img/reel-rainbow.webp" width="1000" height="1000" alt="A steep alley of rainbow-painted steps between mural-covered walls" loading="lazy" decoding="async" />
+                <img src="img/reel-rainbow.webp" srcset="img/reel-rainbow-500.webp 500w, img/reel-rainbow.webp 1000w" sizes="(max-width: 700px) 66vw, 26rem" width="1000" height="1000" alt="A steep alley of rainbow-painted steps between mural-covered walls" loading="lazy" decoding="async" />
               </li>
               <li class="reel-item">
-                <img src="img/reel-desert.webp" width="1000" height="1000" alt="A camper van parked on an empty desert road below sandstone spires" loading="lazy" decoding="async" />
+                <img src="img/reel-desert.webp" srcset="img/reel-desert-500.webp 500w, img/reel-desert.webp 1000w" sizes="(max-width: 700px) 66vw, 26rem" width="1000" height="1000" alt="A camper van parked on an empty desert road below sandstone spires" loading="lazy" decoding="async" />
               </li>
               <li class="reel-item">
-                <img src="img/reel-alley.webp" width="720" height="722" alt="A woman in a white dress descending a sunlit stepped alley lined with shops and plants" loading="lazy" decoding="async" />
+                <img src="img/reel-alley.webp" srcset="img/reel-alley-500.webp 500w, img/reel-alley.webp 1000w" sizes="(max-width: 700px) 66vw, 26rem" width="720" height="722" alt="A woman in a white dress descending a sunlit stepped alley lined with shops and plants" loading="lazy" decoding="async" />
               </li>
               <li class="reel-item">
-                <img src="img/reel-zodiac.webp" width="1000" height="1000" alt="A boat of people in yellow parkas facing a low sun over pack ice" loading="lazy" decoding="async" />
+                <img src="img/reel-zodiac.webp" srcset="img/reel-zodiac-500.webp 500w, img/reel-zodiac.webp 1000w" sizes="(max-width: 700px) 66vw, 26rem" width="1000" height="1000" alt="A boat of people in yellow parkas facing a low sun over pack ice" loading="lazy" decoding="async" />
               </li>
               <li class="reel-item">
-                <img src="img/reel-brick.webp" width="990" height="1000" alt="A red brick corner building with turrets above an empty crossroads" loading="lazy" decoding="async" />
+                <img src="img/reel-brick.webp" srcset="img/reel-brick-500.webp 500w, img/reel-brick.webp 1000w" sizes="(max-width: 700px) 66vw, 26rem" width="990" height="1000" alt="A red brick corner building with turrets above an empty crossroads" loading="lazy" decoding="async" />
               </li>
               <li class="reel-item">
-                <img src="img/reel-ghent.webp" width="1000" height="1000" alt="A Gothic stone building with spires standing above a canal at dusk" loading="lazy" decoding="async" />
+                <img src="img/reel-ghent.webp" srcset="img/reel-ghent-500.webp 500w, img/reel-ghent.webp 1000w" sizes="(max-width: 700px) 66vw, 26rem" width="1000" height="1000" alt="A Gothic stone building with spires standing above a canal at dusk" loading="lazy" decoding="async" />
               </li>
               <li class="reel-item">
-                <img src="img/reel-hillside.webp" width="1000" height="1000" alt="Brightly painted houses stacked up a steep hillside, with a mural across one wall" loading="lazy" decoding="async" />
+                <img src="img/reel-hillside.webp" srcset="img/reel-hillside-500.webp 500w, img/reel-hillside.webp 1000w" sizes="(max-width: 700px) 66vw, 26rem" width="1000" height="1000" alt="Brightly painted houses stacked up a steep hillside, with a mural across one wall" loading="lazy" decoding="async" />
               </li>
               <li class="reel-item">
-                <img src="img/reel-packice.webp" width="1000" height="1000" alt="A boat of people in yellow parkas crossing broken pack ice under a heavy sky" loading="lazy" decoding="async" />
+                <img src="img/reel-packice.webp" srcset="img/reel-packice-500.webp 500w, img/reel-packice.webp 1000w" sizes="(max-width: 700px) 66vw, 26rem" width="1000" height="1000" alt="A boat of people in yellow parkas crossing broken pack ice under a heavy sky" loading="lazy" decoding="async" />
               </li>
               </ol>
             </div>

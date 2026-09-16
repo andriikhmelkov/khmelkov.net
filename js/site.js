@@ -87,6 +87,13 @@
 
   renderLog();
 
+  /* Without the dealing animation the strip is a horizontal scroller, so it needs a tab stop. */
+  const scroller = document.querySelector(".reel-scroller");
+  const dealing = CSS.supports("animation-timeline: view()") && !reducedMotion;
+  if (scroller && !dealing) {
+    scroller.tabIndex = 0;
+  }
+
   /* Core samples: click a career layer to dig */
   document.querySelectorAll(".stratum").forEach((layer) => {
     const sample = layer.querySelector(".core-sample");
