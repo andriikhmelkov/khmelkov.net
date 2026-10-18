@@ -251,7 +251,7 @@ p {
 .site-nav ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.25rem 1.5rem;
+  gap: 0.25rem clamp(0.75rem, 3.4vw, 1.5rem);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -262,6 +262,16 @@ p {
 .site-nav a {
   color: var(--ink-soft);
   text-decoration: none;
+}
+
+.site-nav svg {
+  vertical-align: -0.125em;
+}
+
+@media (max-width: 370px) {
+  .site-nav ul {
+    font-size: 0.875rem;
+  }
 }
 
 .site-nav a:hover {
@@ -795,17 +805,6 @@ p {
 
 .contact .section-intro {
   margin-top: 1rem;
-}
-
-.profiles {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem 1.5rem;
-  margin: 3rem 0 0;
-  padding: 0;
-  list-style: none;
-  font-family: var(--sans);
-  font-size: 0.9375rem;
 }
 
 .copyright {
