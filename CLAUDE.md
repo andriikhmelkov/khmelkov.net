@@ -12,7 +12,7 @@ Serve the directory (`python3 -m http.server 8000`) and open it in a browser; `4
 
 ## Deployment
 
-GitHub Pages serves the repo root from the `main` branch; `CNAME` pins the custom domain `khmelkov.net`. `_config.yml` keeps `CLAUDE.md` out of the Jekyll build. Pushing to `main` deploys — there is no staging environment, so verify rendering locally first.
+`.github/workflows/pages.yml` deploys to GitHub Pages (source: GitHub Actions, no Jekyll): it copies the repo root minus dotfiles and `CLAUDE.md` into the Pages artifact. `CNAME` pins the custom domain `khmelkov.net`. Pushing to `main` deploys — there is no staging environment, so verify rendering locally first.
 
 ## Architecture
 
